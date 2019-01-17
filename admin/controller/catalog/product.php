@@ -362,6 +362,7 @@ class ControllerCatalogProduct extends Controller {
 				'product_id' => $result['product_id'],
 				'image'      => $image,
 				'name'       => $result['name'],
+                'name2'      => $result['name2'],
 				'model'      => $result['model'],
 				'price'      => $this->currency->format($result['price'], $this->config->get('config_currency')),
 				'special'    => $special,
@@ -1180,6 +1181,10 @@ class ControllerCatalogProduct extends Controller {
 			if ((utf8_strlen($value['name']) < 1) || (utf8_strlen($value['name']) > 255)) {
 				$this->error['name'][$language_id] = $this->language->get('error_name');
 			}
+
+            if ((utf8_strlen($value['name2']) < 1) || (utf8_strlen($value['name2']) > 255)) {
+                $this->error['name2'][$language_id] = $this->language->get('error_name');
+            }
 
 			if ((utf8_strlen($value['meta_title']) < 1) || (utf8_strlen($value['meta_title']) > 255)) {
 				$this->error['meta_title'][$language_id] = $this->language->get('error_meta_title');
