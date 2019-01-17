@@ -1,0 +1,5 @@
+2019-01-17 17:33:17 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'opencart' in /var/www/html/opencart/upload/system/library/db/mysqli.php on line 7
+2019-01-17 17:33:17 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/html/opencart/upload/system/library/db/mysqli.php on line 10
+2019-01-17 17:33:17 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/html/opencart/upload/system/library/db/mysqli.php on line 10
+2019-01-17 17:33:17 - PHP Notice:  Undefined variable: mysql in /var/www/html/opencart/upload/install/controller/install/step_3.php on line 280
+2019-01-17 17:33:17 - PHP Notice:  Trying to get property of non-object in /var/www/html/opencart/upload/install/controller/install/step_3.php on line 280
